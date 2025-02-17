@@ -5,8 +5,10 @@ import { useTemplate } from "@hooks/useTemplate";
 const Vue = () => {
   const { queries, mutations } = useTemplate();
 
+  // Parameters can be passed on queries.function(PARAMS)
   const q_getNotifications = useQuery(queries.getNotifications());
 
+  // Parameters CANNOT be passed on mutations.function(), pass them on mutation.mutate(PARAMS)
   const m_oneParam = useMutation(mutations.oneParam());
   const m_fourParams = useMutation(mutations.fourParams());
 
