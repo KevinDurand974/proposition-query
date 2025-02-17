@@ -1,7 +1,7 @@
 import type { QueryClient } from "@tanstack/react-query";
 
 import * as actions from "@actions/test";
-import { createMutation, createQuery } from "./utils.js";
+import { createMutation, createQuery } from "./utils";
 
 
 export default (queryClient: QueryClient) => ({
