@@ -28,15 +28,7 @@ const Vue = () => {
       <button
         onClick={() => {
           m_fourParams.mutate({ a: true, b: "test" });
-          /*
-						(variables: {
-								a: boolean;
-								b: string;
-						}, options?: MutateOptions<string, Error, {
-								a: boolean;
-								b: string;
-						}, unknown> | undefined) => void
-					 */
+          // (variables: { a: boolean; b: string; }, options?: MutateOptions<string, Error, { a: boolean; b: string; }, unknown> | undefined) => void
         }}
       >
         Mutate
